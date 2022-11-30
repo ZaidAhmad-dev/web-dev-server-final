@@ -12,7 +12,7 @@ import User from './models/user_model.js';
 import Twitter from 'twitter';
 import needle from "needle"
 const DB_CONNECTION_STRING = 'mongodb+srv://tharamesseroux:braTtitude17*@cluster0.xssrp.mongodb.net/webdev?retryWrites=true&w=majority';
-const CONNECTION_STRING = process.env.DB_CONNECTION_STRING || 'mongodb://localhost:27017/webdev'
+const CONNECTION_STRING = DB_CONNECTION_STRING || 'mongodb://localhost:27017/webdev'
 mongoose.connect(CONNECTION_STRING);
 
 // helloController(app);`
